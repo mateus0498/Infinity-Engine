@@ -1,5 +1,5 @@
 # Infinity Engine
-Infinity Engine é um rendizador de gráficos tridimensionais em tempo real. Encontra-se em fase de desenvolvimento. Roda apenas no sistema operacional Windows com placas de vídeo com suporte à DirectX 12.
+Infinity Engine é um renderizador de gráficos tridimensionais em tempo real. Encontra-se em fase de desenvolvimento. Roda apenas no sistema operacional Windows com placas de vídeo com suporte à DirectX 12.
 
 ## Estado atual do Projeto
 * Implementação da câmera - no vertex shader do [pipeline gráfico](https://docs.microsoft.com/en-us/windows/win32/direct3d11/overviews-direct3d-11-graphics-pipeline), são realizadas três transformações lineares: *model transform*, *view transform* e *projection transform*. A primeira transforma coordenadas do espaço do modelo para espaço do mundo, a segunda leva as coordenadas do espaço do mundo para espaço da câmera e, finalmente, a última leva as coordenadas do espaço da câmera para o volume de visualização (*viewing frustum*). Para mais detalhes, acesse [Transforms](https://docs.microsoft.com/pt-pt/windows/uwp/graphics-concepts/transforms).
